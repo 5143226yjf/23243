@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>慕课网</title>
+    <link href="CSS/main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/tex.js"></script>
+    <script type="text/javascript" src="js/setHomeSetFav.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="top">
+    <ul class="content">
+        <li><a href="#">联系我们</a></li>
+        <li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+        <li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+    </ul>
+</div>
+<!--中部-->
+<div class="wrap">
+    <!--图标-->
+    <div class="log">
+        <div class="log-left">
+           <img src="images/logo.jpg">
+        </div>
+        <div class="log-right">
+            <img src="images/tel.jpg" width="28" height="28">
+             24小时服务热线：
+            <span class="tel">123-456-7890</span>
+        </div>
+    </div>
+    <!--导航条-->
+    <div class="nav">
+        <div class="nav-left"></div>
+        <div class="nav-mid">
+            <div class="nav-midleft">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">关于慕课</a></li>
+                    <li><a href="#">新闻动态</a></li>
+                    <li><a href="#">课程中心</a></li>
+                    <li><a href="#">在线课程</a></li>
+                    <li><a href="#">人才招聘</a></li>
+                </ul>
+            </div>
+            <div class="nav-midright">
+                <form action="" method="post">
+                    <input type="text" class="search_text" />
+                </form>
+             </div>
+        </div>
+        <div class="nav-right">
+            <img src="images/nav_right.jpg">
+        </div>
+    </div>
+    <!--轮播图-->
+    <div class="container" id="idTransformView">
+        <ul class="slider" id="idSlider">
+            <li><img src="images/ad4.jpg"/></li>
+            <li><img src="images/ad3.jpg"/></li>
+            <li><img src="images/ad2.jpg"/></li>
+        </ul>
+        <ul class="num" id="idNum">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul><br />
+    </div>
+    <!--主体部分-->
+    <div class="main">
+        <div class="main-left">
+            <div class="title">
+            <h2 class="title-l">新闻中心</h2>
+                <span class="title-r">
+                    <a href="#">More>></a>
+                </span>
+            </div>
+            <div class="l-pic">
+                <img src="images/news.jpg" width="113" height="77" >
+                <div class="l-pic-r">
+                    <h2><a href="#">520 慕女神来喊你告白！</a>   </h2>
+                    <p>
+                       活动时间：5月20日-5月25日</br>
+                       获奖公布时间：5月26日
+                       </br>
+                       <a href="#"> Learn More>></a>
+                    </p>
+                </div>
+            </div>
+            <div class="l-list">
+                <ul>
+                    <li>
+                        <a href="#">【慕课访谈 用户篇】“有为屌丝”在路上</a>
+                        <span>2016-05-09</span>
+                    </li>
+                    <li>
+                        <a href="#">【有奖活动】给父亲的三行书信</a>
+                        <span>2016-05-09</span>
+                    </li>
+                    <li>
+                        <a href="#">【程序猿，请晒出你的童年】活动获奖公告</a>
+                        <span>2016-05-01</span>
+                    </li>
+                    <li>
+                        <a href="#">【慕课访谈】破茧成蝶，美女程序猿的蜕变</a>
+                        <span>2016-05-01</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-mid">
+            <div class="m-title">
+                <h2 class="m-title-l">课程中心</h2>
+                <span class="m-title-r">
+                    <a href="#">More>></a>
+                </span>
+            </div>
+            <div class="m-pic">
+                <img src="images/css.jpg" width="158" height="110">
+                <div class="m-pic-r">
+                    <h2><a href="#">CSS圆角进化论</a></h2>
+                    <p>
+                        CSS圆角的实现，经历了三大发展阶段：背景图片方式、CSS2.0+HTML标签模拟、CSS3.0圆角属性）。本案例详细讲解每一种的实现方式，并对实现的优缺点进行对比分析。
+                    </p>
+                </div>
+            </div>
+            <div class="m-list">
+                <ul>
+                    <li>PHP开发</li>
+                    <li>前端开发</li>
+                    <li>JAVA开发</li>
+                    <li>Android开发</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="r-title">
+                <h2 class="r-title-l">媒体聚焦</h2>
+                <span class="r-title-r">
+                    <a href="#">More>></a>
+                </span>
+            </div>
+            <p class="video_content">
+                <embed src="http://player.youku.com/player.php/sid/XNjkzMDE5MTUy/v.swf" allowfullscreen="true" quality="high" width="220" height="140" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" title="Adobe Flash Player">
+            </p>
+            <div class="r-pic">
+                <img src="images/app.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="bottom">
+    <div class="b-content">
+        <ul>
+            <li>关于
+                <ul>
+                    <li>品牌故事</li>
+                    <li>联系我们</li>
+                    <li>加入我们</li>
+                    <li>版权声明</li>
+                </ul>
+            </li>
+            <li>课程
+                <ul>
+                    <li>PHP开发</li>
+                    <li>前端开发</li>
+                    <li>Java开发</li>
+                    <li>Android开发</li>
+                    </ul>
+            </li>
+            <li>关注
+                <ul>
+                    <li>新浪微博</li>
+                    <li>腾讯微博</li>
+                    <li>企业微信</li>
+                    <li>QQ空间</li>
+                </ul>
+            </li>
+            <li>留言
+                <ul>
+                    <li>意见反馈</li>
+                    <li>问题留言</li>
+                    <li>媒体联络</li>
+                    <li>在线客服</li>
+                </ul>
+            </li>
+            <li><img src="images/weixin.png" alt="微信关注" width="30" height="27" />微信关注
+                <img src="images/qrcode.jpg" alt="扫描关注慕课网官方微信" width="102" height="102" /></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
