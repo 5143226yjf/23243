@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="CSS/box2.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="box" id="box">
+</div>
+<button id="btn">运动</button>
+<button id="btn2">停下</button>
+<script>
+    window.onload=function() {
+        function _$(id)
+        {
+            if (id) {
+                return document.getElementById(id);
+            }
+            else {
+                return false;
+            }
+        }
+        var timer=null;
+        var btn=_$('btn');
+        var box=_$('box');
+        var time= 30;
+        var distance=500;
+        var speed=50;
+        box.style.left=0;
+        box.style.top=0;
+        btn.onclick=function(){
+            clearInterval(timer);
+            var left=0;
+            var top=0;
+            timer=setInterval(function(){
+               left=parseInt(box.style.left) ;
+                if(left<distance&&top==0){
+                    left=parseInt(box.style.left);
+                    box.style.left=left+speed+'px';
+                }
+                else if(left==distance&&top<distance){
+                    top=parseInt(box.style.top) ;
+                    box.style.top=top+speed+'px';
+                }
+                else if(left>=50&&left<=distance&&top==distance){
+
+                    box.style.left=left-speed+'px';
+                    left=parseInt(box.style.left );
+
+                }
+                else if(left==0&&top<=distance){
+
+                    box.style.top=top-speed+'px';
+                    top=parseInt(box.style.top) ;
+                }
+                else{
+                    clearInterval(timer);
+                }
+                console.log(left);
+                console.log("top"+top);
+
+            },time);
+        };
+        btn2.onclick=function(){
+            clearInterval(timer);
+        }
+    };
+
+
+</script>
+</body>
+</html>

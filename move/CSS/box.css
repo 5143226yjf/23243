@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+div{
+    height:100px;
+    width:100px;
+}
+.box1{
+    background:#99CCFF;
+    position:absolute;
+    left:0;
+    top:0;
+    animation:myfrist 5s;
+
+}
+@keyframes myfrist {
+    0%{left:0px;top:0px;}
+    25%{left:400px;top:0px;}
+    50%{left:400px;top:300px;}
+    75%{left:0px;top:300px;}
+    100%{left:0px;top:0px;}
+
+}
+
